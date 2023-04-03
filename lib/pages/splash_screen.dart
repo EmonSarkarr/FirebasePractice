@@ -31,8 +31,17 @@ class _SplahScreenState extends State<SplahScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Center(child: Text("FireBaseLOGO",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 70),))
+          children:  [
+            Container(
+              height: 300,
+              width: 300,
+              decoration:  BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('lib/images/appstore.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
           ],
         ),
       ),

@@ -29,8 +29,8 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               Container(
-                height: size.height / 5,
-                width: size.width / 2,
+                height: size.height / 7,
+                width: size.width / 3,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('lib/images/logo1.png'),
@@ -109,15 +109,16 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("this is error tv", style: TextStyle(color: Colors.red)),
+              const Text("this is error tv",
+                  style: TextStyle(color: Colors.red)),
               const SizedBox(
                 height: 10,
               ),
               const Center(
                   child: Text(
-                    "Or,Login With...",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                  )),
+                "Or,Login With...",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+              )),
               const SizedBox(
                 height: 10,
               ),
@@ -158,8 +159,8 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(color: Colors.black),
                             color: Colors.transparent),
-                        child:
-                        const ClipRRect(child: Icon(Icons.apple, size: 50))),
+                        child: const ClipRRect(
+                            child: Icon(Icons.apple, size: 50))),
                   ),
                 ],
               ),
@@ -171,13 +172,13 @@ class _LoginPageState extends State<LoginPage> {
                       text: "New user?",
                       style: TextStyle(fontSize: 20, color: Colors.black),
                       children: [
-                        TextSpan(
-                            text: "Are you want to",
-                            style: TextStyle(fontSize: 20, color: Colors.black)),
-                        TextSpan(
-                            text: 'Register',
-                            style: TextStyle(color: Colors.green, fontSize: 25))
-                      ])),
+                    TextSpan(
+                        text: "Are you want to",
+                        style: TextStyle(fontSize: 20, color: Colors.black)),
+                    TextSpan(
+                        text: 'Register',
+                        style: TextStyle(color: Colors.green, fontSize: 25))
+                  ])),
             ],
           ),
         ),
